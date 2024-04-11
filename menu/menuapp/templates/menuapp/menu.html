@@ -1,0 +1,18 @@
+{% load menuapp_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu-Tree</title>
+</head>
+<body>
+    <nav>
+        {% autoescape off %}
+            {% draw_menu 'main_menu' %}
+        {% endautoescape %}
+        {% autoescape off %}
+            {% draw_menu 'main_menu2' %}
+        {% endautoescape %}
+    </nav>
+</body>
+</html>
